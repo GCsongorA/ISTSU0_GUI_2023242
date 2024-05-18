@@ -6,17 +6,20 @@
         xmlns:local="clr-namespace:ISTSU0_GUI_2023242.Client"
         xmlns:views="clr-namespace:ISTSU0_GUI_2023242.Client.Views" xmlns:views1="clr-namespace:ISTSU0_GUI_2023242.Client.Views.Band"
         mc:Ignorable="d"
-        Title="GuitarDB" Height="450" Width="800">
+        Title="GuitarDB" Height="450" Width="800" Background="DarkGray">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*" />
             <ColumnDefinition Width="10*" />
         </Grid.ColumnDefinitions>
-        <StackPanel Grid.Column="0" Background="LightGray">
-            <Button Content="Bands" Click="Band_Click" />
-            <Button Content="Guitarists" Click="Guitarist_Click"  />
-            <Button Content="Guitars" Click="Guitar_Click"  />
-        </StackPanel>
-        <ContentControl x:Name="ContentArea" Grid.Column="1" Background="DarkGray"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button Content="Bands" Click="Band_Click" Grid.Row="0"/>
+        <Button Content="Guitarists" Click="Guitarist_Click" Grid.Row="1" />
+        <Button Content="Guitars" Click="Guitar_Click" Grid.Row="2" />
+        <ContentControl x:Name="ContentArea" Grid.Column="1" Grid.Row="0" Grid.RowSpan="3" Background="DarkGray"/>
     </Grid>
 </Window>

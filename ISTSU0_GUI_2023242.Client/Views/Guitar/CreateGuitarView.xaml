@@ -5,18 +5,18 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ISTSU0_GUI_2023242.Client.Views.Guitar"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800" Background="White">
+             d:DesignHeight="450" d:DesignWidth="800" Background="DarkGray">
     <Grid>
         <StackPanel>
-            <Label Content="Brand:" />
-            <TextBox x:Name="txbBrand" />
-            <Label Content="Model:" />
-            <TextBox x:Name="txbModel" />
-            <Label Content="Body type (FlyingV, LesPaul, Stratocaster, SuperStrat, Telecaster):" />
-            <TextBox x:Name="txbBodyType" />
-            <Label Content="Guitarist (GUID):" />
-            <TextBox x:Name="txbGuitarist" />
-            <Button Content="Add" Click="Add_Click" />
+            <Label Content="Brand:" Margin="3" Padding="10"/>
+            <TextBox x:Name="txbBrand" Margin="3" Padding="10"/>
+            <Label Content="Model:" Margin="3" Padding="10"/>
+            <TextBox x:Name="txbModel" Margin="3" Padding="10"/>
+            <Label Content="Body type (FlyingV, LesPaul, Stratocaster, SuperStrat, Telecaster):" Margin="3" Padding="10"/>
+            <TextBox x:Name="txbBodyType" Margin="3" Padding="10"/>
+            <Label Content="Guitarist (GUID):" Margin="3" Padding="10"/>
+            <TextBox x:Name="txbGuitarist" Margin="3" Padding="10"/>
+            <Button Content="Add" Click="Add_Click" Margin="3" Padding="10"/>
         </StackPanel>
     </Grid>
 </UserControl>

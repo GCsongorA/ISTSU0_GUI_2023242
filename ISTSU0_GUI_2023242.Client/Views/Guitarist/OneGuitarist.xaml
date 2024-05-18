@@ -5,13 +5,22 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ISTSU0_GUI_2023242.Client.Views.Guitarist"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800" Background="White">
+             d:DesignHeight="450" d:DesignWidth="800" Background="DarkGray">
     <Grid>
         <StackPanel>
-            <Label Content="Guitarist ID:" />
-            <TextBox x:Name="txbGuitaristGuid" />
-            <Button Content="Run" Click="Button_Click" />
-            <DataGrid x:Name="DataGrid"/>
+            <Label Content="Guitarist ID:" Margin="5" Padding="10"/>
+            <TextBox x:Name="txbGuitaristGuid" Margin="5" Padding="10"/>
+            <Button Content="Run" Click="Button_Click" Margin="5" Padding="10"/>
+            <DataGrid x:Name="DataGrid" Background="DarkGray">
+                <DataGrid.Resources>
+                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                        <Setter Property="Background" Value="Cyan" />
+                        <Setter Property="BorderThickness" Value="0,0,1,2" />
+                        <Setter Property="BorderBrush" Value="Black" />
+                        <Setter Property="FontWeight" Value="SemiBold" />
+                    </Style>
+                </DataGrid.Resources>
+            </DataGrid>
         </StackPanel>
     </Grid>
 </UserControl>

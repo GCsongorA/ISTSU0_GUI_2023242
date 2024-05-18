@@ -5,12 +5,12 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ISTSU0_GUI_2023242.Client.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800" Background="White">
+             d:DesignHeight="450" d:DesignWidth="800" Background="DarkGray">
     <Grid>
-        <StackPanel>
-            <Label Content="Band to delete (GUID):"/>
-            <TextBox x:Name="txbBandGuid" />
-            <Button Content="Delete" Click="DeleteButton_Click"/>
+        <StackPanel Margin="5" >
+            <Label Content="Band to delete (GUID):" Margin="5" Padding="10"/>
+            <TextBox x:Name="txbBandGuid" Margin="5" Padding="10"/>
+            <Button Content="Delete" Click="DeleteButton_Click" Margin="5" Padding="10"/>
         </StackPanel>
     </Grid>
 </UserControl>

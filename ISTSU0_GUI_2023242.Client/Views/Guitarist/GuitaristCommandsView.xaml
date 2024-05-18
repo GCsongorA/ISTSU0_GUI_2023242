@@ -5,15 +5,15 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ISTSU0_GUI_2023242.Client.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800" Background="White">
+             d:DesignHeight="450" d:DesignWidth="800" Background="DarkGray">
     <Grid>
-        <StackPanel>
-            <Button Content="Where does this guitarist play" Click="WhereGuitarist_Click" />
-            <Button Content="Show all guitarists" Click="GetAll_Click" />
-            <Button Content="Search a guitarist" Click="GetOne_Click" />
-            <Button Content="Update a guitarist" Click="Update_Click" />
-            <Button Content="Add a guitarist" Click="Create_Click" />
-            <Button Content="Delete a guitarist" Click="Delete_Click" />
+        <StackPanel Margin="5" >
+            <Button Content="Where does this guitarist play" Click="WhereGuitarist_Click" Margin="5" Padding="10"/>
+            <Button Content="Show all guitarists" Click="GetAll_Click" Margin="5" Padding="10"/>
+            <Button Content="Search a guitarist" Click="GetOne_Click" Margin="5" Padding="10"/>
+            <Button Content="Update a guitarist" Click="Update_Click" Margin="5" Padding="10"/>
+            <Button Content="Add a guitarist" Click="Create_Click" Margin="5" Padding="10"/>
+            <Button Content="Delete a guitarist" Click="Delete_Click" Margin="5" Padding="10"/>
         </StackPanel>
         <ContentControl x:Name="ContentArea" />
     </Grid>
